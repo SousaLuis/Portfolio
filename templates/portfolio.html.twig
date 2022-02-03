@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio
+{% endblock %}
+
+{% block body %}
+
+<div class="title">
+    <div id="bar"></div>
+        <h1>Luis Sousa</h1>
+        <h3>Dev PHP / Symfony</h3>
+</div>
+
+<div class="card-container">
+    {% for project in projects %}
+        <fieldset class="card">
+                <img src="images{{ project.UrlImage }}">
+                <br>
+                <a class="raise" href="https://{{ project.urlSite }}" target="_blank">{{ project.name }}</a>
+                <br>
+                <a class="raise" href="https://{{ project.urlGithub }}" target="_blank">Github : {{ project.name }}</a>
+        </fieldset>          
+    {% endfor %}
+</div>
+{% endblock %}

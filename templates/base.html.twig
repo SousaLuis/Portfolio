@@ -14,6 +14,28 @@
         {% endblock %}
     </head>
     <body>
+    <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Sousa Luis
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="/" target="_self">Home</a>
+    <a href="https://github.com/SousaLuis" target="_blank">Github</a>
+    <a href="https://www.linkedin.com/in/luissousa2112" target="_blank">LinkedIn</a>
+    <a href="/contact" target="_self">Contact</a>
+  </div>
+</div>
         {% block body %}{% endblock %}
     </body>
 </html>
